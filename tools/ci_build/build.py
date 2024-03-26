@@ -868,6 +868,7 @@ def install_python_deps(numpy_version=""):
     dep_packages.append("sympy>=1.10")
     dep_packages.append("packaging")
     dep_packages.append("cerberus")
+    dep_packages.append("psutil")
     run_subprocess([sys.executable, "-m", "pip", "install", *dep_packages])
 
 
